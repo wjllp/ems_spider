@@ -1,0 +1,3 @@
+from dao import mydao
+username = input('请输入学号：')
+mydao.shutdown_class(username)

@@ -1,0 +1,16 @@
+#coding:utf-8
+import datetime
+import pymysql.cursors
+connection = pymysql.connect(host='60.205.186.194',
+                             port=3306,
+                             user='root',
+                             password='root0.072416',
+                             db='mywork',
+                             charset='utf8',
+                             cursorclass=pymysql.cursors.DictCursor)
+cursor = connection.cursor()
+def select_class_student():
+    sql = "select * from users"
+    cursor.execute(sql)
+    print (cursor.fetchall())
+    return cursor.fetchall()

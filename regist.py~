@@ -1,0 +1,5 @@
+from dao import mydao
+username = input('学号：')
+password = input('密码：')
+email = input('邮箱：')
+print (username,password,email)

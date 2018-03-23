@@ -1,0 +1,4 @@
+create table course(cid int primary key not null auto_increment,id int,cname text,sweek smallint,eweek smallint,ctime text,cweek smallint,wweek smallint);
+
+
+create table student(id int not null primary key,password text,email text,sname text);
